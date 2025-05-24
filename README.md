@@ -2,6 +2,10 @@
 
 Este é um site de portfólio multilíngue desenvolvido em HTML, CSS e JavaScript, focado na apresentação profissional de serviços de desenvolvimento web, e-commerce e soluções digitais.
 
+### Screenshots
+![Home](images/hero-bg.jpg)
+![Sobre](images/about-image.jpg)
+
 ## Funcionalidades
 - Layout responsivo.
 - Suporte multilíngue.
