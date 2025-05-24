@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9fafb" />
+  
+  <!-- 404 Text -->
+  <text x="400" y="200" font-family="Inter, sans-serif" font-size="120" font-weight="bold" text-anchor="middle" fill="#3490dc">404</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="400" cy="350" r="100" fill="#e5e7eb" />
+  <path d="M400,250 L400,450" stroke="#3490dc" stroke-width="8" stroke-linecap="round" />
+  <path d="M300,350 L500,350" stroke="#3490dc" stroke-width="8" stroke-linecap="round" />
+  
+  <!-- Compass Needle -->
+  <g transform="translate(400, 350)">
+    <path d="M0,-80 L20,0 L0,20 L-20,0 Z" fill="#3490dc" />
+    <path d="M0,80 L-20,0 L0,-20 L20,0 Z" fill="#ffed4a" />
+    <circle cx="0" cy="0" r="10" fill="#ffffff" stroke="#3490dc" stroke-width="4" />
+  </g>
+  
+  <!-- Decorative Circles -->
+  <circle cx="250" cy="150" r="30" fill="#ffed4a" opacity="0.5" />
+  <circle cx="550" cy="150" r="30" fill="#ffed4a" opacity="0.5" />
+  <circle cx="200" cy="450" r="40" fill="#3490dc" opacity="0.3" />
+  <circle cx="600" cy="450" r="40" fill="#3490dc" opacity="0.3" />
+  
+  <!-- Message -->
+  <text x="400" y="500" font-family="Inter, sans-serif" font-size="24" text-anchor="middle" fill="#4b5563">Página não encontrada</text>
+</svg>

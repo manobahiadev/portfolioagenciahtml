@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Digital - Soluções Criativas para seu Negócio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-rocket"></i>
+                    <span data-i18n="nav_brand">Agência Digital</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="#home" class="active" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav_about">Sobre</a></li>
+                    <li><a href="#services" data-i18n="nav_services">Serviços</a></li>
+                    <li><a href="#portfolio" data-i18n="nav_portfolio">Portfólio</a></li>
+                    <li><a href="#blog" data-i18n="nav_blog">Blog</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contato</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="lang-toggle" id="lang-toggle">
+                        <img src="images/flag-br.svg" alt="Português">
+                    </button>
+                </div>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#about" data-i18n="nav_about">Sobre</a></li>
+            <li><a href="#services" data-i18n="nav_services">Serviços</a></li>
+            <li><a href="#portfolio" data-i18n="nav_portfolio">Portfólio</a></li>
+            <li><a href="#blog" data-i18n="nav_blog">Blog</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contato</a></li>
+        </ul>
+        
+        <div class="mobile-nav-buttons">
+            <button class="theme-toggle" id="mobile-theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="lang-toggle" id="mobile-lang-toggle">
+                <img src="images/flag-br.svg" alt="Português">
+            </button>
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1 data-i18n="hero_title">Transformamos ideias em experiências digitais</h1>
+                <p data-i18n="hero_description">Somos uma agência digital especializada em design, desenvolvimento web e marketing digital. Criamos soluções inovadoras que impulsionam o crescimento do seu negócio.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary" data-i18n="hero_btn_portfolio">Ver Portfólio</a>
+                    <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_contact">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 data-i18n="about_title">Sobre Nós</h2>
+                <p data-i18n="about_subtitle">Conheça nossa história e nossa equipe de especialistas</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image slide-in-left">
+                    <img src="images/about-image.jpg" alt="Nossa equipe">
+                </div>
+                
+                <div class="about-text slide-in-right">
+                    <h3 data-i18n="about_heading">Criamos experiências digitais memoráveis desde 2015</h3>
+                    <p data-i18n="about_p1">Nossa agência nasceu da paixão por criar soluções digitais que realmente fazem a diferença. Combinamos criatividade, tecnologia e estratégia para desenvolver projetos que não apenas atendem, mas superam as expectativas dos nossos clientes.</p>
+                    <p data-i18n="about_p2">Com uma equipe multidisciplinar de designers, desenvolvedores e especialistas em marketing, trabalhamos de forma colaborativa para entregar resultados excepcionais em cada projeto.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-text" data-i18n="about_stat1">Projetos Concluídos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-text" data-i18n="about_stat2">Clientes Satisfeitos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-text" data-i18n="about_stat3">Especialistas</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-text" data-i18n="about_stat4">Anos de Experiência</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 data-i18n="services_title">Nossos Serviços</h2>
+                <p data-i18n="services_subtitle">Soluções completas para impulsionar seu negócio no ambiente digital</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="service1_title">Desenvolvimento Web</h3>
+                    <p data-i18n="service1_desc">Criamos websites e aplicações web personalizadas, responsivas e otimizadas para performance e conversão.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="service2_title">Aplicativos Mobile</h3>
+                    <p data-i18n="service2_desc">Desenvolvemos aplicativos nativos e híbridos para iOS e Android com foco em usabilidade e experiência do usuário.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="service3_title">Design UI/UX</h3>
+                    <p data-i18n="service3_desc">Criamos interfaces intuitivas e atraentes que proporcionam uma experiência excepcional aos usuários.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="service4_title">Marketing Digital</h3>
+                    <p data-i18n="service4_desc">Estratégias completas de marketing digital para aumentar sua visibilidade online e gerar mais leads.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="service5_title">SEO & Content</h3>
+                    <p data-i18n="service5_desc">Otimização para mecanismos de busca e criação de conteúdo relevante para atrair e engajar seu público-alvo.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="service6_title">E-commerce</h3>
+                    <p data-i18n="service6_desc">Desenvolvimento de lojas virtuais completas e otimizadas para conversão e experiência de compra.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 data-i18n="portfolio_title">Nosso Portfólio</h2>
+                <p data-i18n="portfolio_subtitle">Conheça alguns dos nossos projetos mais recentes</p>
+            </div>
+            
+            <div class="portfolio-filters fade-in">
+                <div class="portfolio-filter active" data-filter="all" data-i18n="portfolio_filter_all">Todos</div>
+                <div class="portfolio-filter" data-filter="web" data-i18n="portfolio_filter_web">Web Design</div>
+                <div class="portfolio-filter" data-filter="app" data-i18n="portfolio_filter_app">Aplicativos</div>
+                <div class="portfolio-filter" data-filter="branding" data-i18n="portfolio_filter_branding">Branding</div>
+                <div class="portfolio-filter" data-filter="marketing" data-i18n="portfolio_filter_marketing">Marketing</div>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-1.jpg" alt="Projeto de Web Design">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title" data-i18n="portfolio1_title">Website Corporativo</h3>
+                            <p class="portfolio-category" data-i18n="portfolio1_category">Web Design</p>
+                            <div class="portfolio-buttons">
+                                <a href="#" class="btn btn-primary portfolio-btn" data-modal="portfolio-modal-1" data-i18n="portfolio_btn">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-i18n="portfolio1_title">Website Corporativo</h3>
+                        <p data-i18n="portfolio1_desc">Redesign completo do site institucional para uma empresa de tecnologia.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML5</span>
+                            <span class="portfolio-tag">CSS3</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                            <span class="portfolio-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in" data-category="app">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-2.jpg" alt="Projeto de Aplicativo Mobile">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title" data-i18n="portfolio2_title">Aplicativo de Finanças</h3>
+                            <p class="portfolio-category" data-i18n="portfolio2_category">Aplicativo Mobile</p>
+                            <div class="portfolio-buttons">
+                                <a href="#" class="btn btn-primary portfolio-btn" data-modal="portfolio-modal-2" data-i18n="portfolio_btn">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-i18n="portfolio2_title">Aplicativo de Finanças</h3>
+                        <p data-i18n="portfolio2_desc">Aplicativo para gestão financeira pessoal com interface intuitiva e recursos avançados.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">React Native</span>
+                            <span class="portfolio-tag">Firebase</span>
+                            <span class="portfolio-tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-3.jpg" alt="Projeto de Branding">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title" data-i18n="portfolio3_title">Identidade Visual</h3>
+                            <p class="portfolio-category" data-i18n="portfolio3_category">Branding</p>
+                            <div class="portfolio-buttons">
+                                <a href="#" class="btn btn-primary portfolio-btn" data-modal="portfolio-modal-3" data-i18n="portfolio_btn">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-i18n="portfolio3_title">Identidade Visual</h3>
+                        <p data-i18n="portfolio3_desc">Desenvolvimento completo de identidade visual para startup de tecnologia.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Logo</span>
+                            <span class="portfolio-tag">Branding</span>
+                            <span class="portfolio-tag">Papelaria</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in" data-category="marketing">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-4.jpg" alt="Projeto de Marketing Digital">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title" data-i18n="portfolio4_title">Campanha Digital</h3>
+                            <p class="portfolio-category" data-i18n="portfolio4_category">Marketing Digital</p>
+                            <div class="portfolio-buttons">
+                                <a href="#" class="btn btn-primary portfolio-btn" data-modal="portfolio-modal-4" data-i18n="portfolio_btn">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-i18n="portfolio4_title">Campanha Digital</h3>
+                        <p data-i18n="portfolio4_desc">Estratégia completa de marketing digital para lançamento de produto.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Social Media</span>
+                            <span class="portfolio-tag">Google Ads</span>
+                            <span class="portfolio-tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal" id="portfolio-modal-1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="images/portfolio-1.jpg" alt="Website Corporativo">
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title" data-i18n="portfolio1_title">Website Corporativo</h2>
+                
+                <div class="modal-meta">
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_client">Cliente</h4>
+                        <p>TechSolutions Inc.</p>
+                    </div>
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_date">Data</h4>
+                        <p>Março 2025</p>
+                    </div>
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_category">Categoria</h4>
+                        <p data-i18n="portfolio1_category">Web Design</p>
+                    </div>
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_tags">Tags</h4>
+                        <p>HTML5, CSS3, JavaScript, Responsive</p>
+                    </div>
+                </div>
+                
+                <div class="modal-description">
+                    <h3 data-i18n="modal_challenge">Desafio</h3>
+                    <p>A TechSolutions precisava de um redesign completo do seu site institucional para refletir seu novo posicionamento de mercado e melhorar a experiência do usuário. O site antigo tinha problemas de navegação, não era responsivo e não comunicava adequadamente os valores e serviços da empresa.</p>
+                    
+                    <h3 data-i18n="modal_solution">Solução</h3>
+                    <p>Desenvolvemos um site moderno e responsivo, com foco na experiência do usuário e na conversão. Utilizamos as mais recentes tecnologias web para garantir performance e compatibilidade com todos os dispositivos. O design foi criado com base na nova identidade visual da empresa, com uma paleta de cores moderna e elementos visuais que transmitem inovação e confiabilidade.</p>
+                    
+                    <h3 data-i18n="modal_results">Resultados</h3>
+                    <p>O novo site resultou em um aumento de 45% no tempo médio de permanência dos usuários, 30% mais conversões de leads e uma redução de 60% na taxa de rejeição. A empresa também relatou um feedback muito positivo dos clientes sobre a nova experiência digital.</p>
+                    
+                    <div class="modal-gallery">
+                        <img src="images/portfolio-1.jpg" alt="Website Corporativo - Home">
+                        <img src="images/portfolio-1.jpg" alt="Website Corporativo - Serviços">
+                        <img src="images/portfolio-1.jpg" alt="Website Corporativo - Mobile">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-modal" id="portfolio-modal-2">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="images/portfolio-2.jpg" alt="Aplicativo de Finanças">
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title" data-i18n="portfolio2_title">Aplicativo de Finanças</h2>
+                
+                <div class="modal-meta">
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_client">Cliente</h4>
+                        <p>FinanceApp</p>
+                    </div>
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_date">Data</h4>
+                        <p>Janeiro 2025</p>
+                    </div>
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_category">Categoria</h4>
+                        <p data-i18n="portfolio2_category">Aplicativo Mobile</p>
+                    </div>
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_tags">Tags</h4>
+                        <p>React Native, Firebase, UI/UX</p>
+                    </div>
+                </div>
+                
+                <div class="modal-description">
+                    <h3 data-i18n="modal_challenge">Desafio</h3>
+                    <p>A FinanceApp queria criar um aplicativo de gestão financeira pessoal que fosse intuitivo, seguro e com recursos avançados de análise de dados. O principal desafio era desenvolver uma interface que simplificasse conceitos financeiros complexos e tornasse o controle financeiro acessível para todos os tipos de usuários.</p>
+                    
+                    <h3 data-i18n="modal_solution">Solução</h3>
+                    <p>Desenvolvemos um aplicativo multiplataforma utilizando React Native, com backend em Firebase para garantir segurança e sincronização em tempo real. O design foi criado com foco na simplicidade e na experiência do usuário, com dashboards personalizáveis, gráficos interativos e um sistema de categorização inteligente de despesas.</p>
+                    
+                    <h3 data-i18n="modal_results">Resultados</h3>
+                    <p>O aplicativo alcançou mais de 50.000 downloads nos primeiros três meses após o lançamento, com uma avaliação média de 4.8/5 nas lojas de aplicativos. A taxa de retenção após 30 dias é de 65%, bem acima da média do setor, e os usuários relatam uma economia média de 15% em seus gastos mensais após começarem a usar o aplicativo.</p>
+                    
+                    <div class="modal-gallery">
+                        <img src="images/portfolio-2.jpg" alt="Aplicativo de Finanças - Dashboard">
+                        <img src="images/portfolio-2.jpg" alt="Aplicativo de Finanças - Relatórios">
+                        <img src="images/portfolio-2.jpg" alt="Aplicativo de Finanças - Configurações">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-modal" id="portfolio-modal-3">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="images/portfolio-3.jpg" alt="Identidade Visual">
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title" data-i18n="portfolio3_title">Identidade Visual</h2>
+                
+                <div class="modal-meta">
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_client">Cliente</h4>
+                        <p>NovaTech Startup</p>
+                    </div>
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_date">Data</h4>
+                        <p>Novembro 2024</p>
+                    </div>
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_category">Categoria</h4>
+                        <p data-i18n="portfolio3_category">Branding</p>
+                    </div>
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_tags">Tags</h4>
+                        <p>Logo, Branding, Papelaria</p>
+                    </div>
+                </div>
+                
+                <div class="modal-description">
+                    <h3 data-i18n="modal_challenge">Desafio</h3>
+                    <p>A NovaTech, uma startup de tecnologia em fase inicial, precisava de uma identidade visual completa que transmitisse inovação, confiabilidade e modernidade. A empresa não tinha nenhuma identidade visual estabelecida e precisava se destacar em um mercado altamente competitivo.</p>
+                    
+                    <h3 data-i18n="modal_solution">Solução</h3>
+                    <p>Desenvolvemos uma identidade visual completa, começando com um logotipo moderno e versátil que funciona bem em diferentes aplicações. Criamos um manual de identidade visual detalhado, definindo paleta de cores, tipografia, elementos gráficos e aplicações. Também desenvolvemos todo o material de papelaria corporativa e templates para redes sociais.</p>
+                    
+                    <h3 data-i18n="modal_results">Resultados</h3>
+                    <p>A nova identidade visual ajudou a NovaTech a estabelecer uma presença de marca forte desde o início. A empresa conseguiu atrair investidores e parceiros estratégicos, em parte devido à imagem profissional e coerente transmitida pela nova identidade. O reconhecimento da marca aumentou significativamente nos primeiros seis meses após o lançamento.</p>
+                    
+                    <div class="modal-gallery">
+                        <img src="images/portfolio-3.jpg" alt="Identidade Visual - Logo">
+                        <img src="images/portfolio-3.jpg" alt="Identidade Visual - Cartões">
+                        <img src="images/portfolio-3.jpg" alt="Identidade Visual - Aplicações">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-modal" id="portfolio-modal-4">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="images/portfolio-4.jpg" alt="Campanha Digital">
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title" data-i18n="portfolio4_title">Campanha Digital</h2>
+                
+                <div class="modal-meta">
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_client">Cliente</h4>
+                        <p>EcoProducts</p>
+                    </div>
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_date">Data</h4>
+                        <p>Fevereiro 2025</p>
+                    </div>
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_category">Categoria</h4>
+                        <p data-i18n="portfolio4_category">Marketing Digital</p>
+                    </div>
+                    <div class="modal-meta-item">
+                        <h4 data-i18n="modal_tags">Tags</h4>
+                        <p>Social Media, Google Ads, Analytics</p>
+                    </div>
+                </div>
+                
+                <div class="modal-description">
+                    <h3 data-i18n="modal_challenge">Desafio</h3>
+                    <p>A EcoProducts estava lançando uma nova linha de produtos sustentáveis e precisava de uma estratégia de marketing digital completa para gerar awareness e impulsionar as vendas iniciais. O desafio era atingir o público-alvo correto com um orçamento limitado e em um mercado com grandes concorrentes.</p>
+                    
+                    <h3 data-i18n="modal_solution">Solução</h3>
+                    <p>Desenvolvemos uma estratégia multicanal que incluiu marketing de conteúdo, campanhas de mídia paga (Google Ads e redes sociais), parcerias com influenciadores e email marketing. Criamos landing pages otimizadas para conversão e implementamos um sistema de análise de dados para monitorar e otimizar o desempenho em tempo real.</p>
+                    
+                    <h3 data-i18n="modal_results">Resultados</h3>
+                    <p>A campanha superou todas as metas estabelecidas, gerando um ROI de 320% no primeiro trimestre. As vendas online aumentaram em 175% em comparação com o trimestre anterior, e a base de clientes cresceu em 45%. A campanha também resultou em cobertura de mídia espontânea em importantes veículos do setor.</p>
+                    
+                    <div class="modal-gallery">
+                        <img src="images/portfolio-4.jpg" alt="Campanha Digital - Social Media">
+                        <img src="images/portfolio-4.jpg" alt="Campanha Digital - Landing Page">
+                        <img src="images/portfolio-4.jpg" alt="Campanha Digital - Resultados">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 data-i18n="testimonials_title">Depoimentos</h2>
+                <p data-i18n="testimonials_subtitle">O que nossos clientes dizem sobre nós</p>
+            </div>
+            
+            <div class="testimonials-slider fade-in">
+                <div class="testimonial-item active">
+                    <div class="testimonial-text" data-i18n="testimonial1">
+                        A equipe da Agência Digital superou todas as nossas expectativas. O novo site não apenas ficou visualmente impressionante, mas também trouxe resultados concretos para nosso negócio, com um aumento significativo nas conversões.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="João Silva">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 data-i18n="testimonial1_name">João Silva</h4>
+                            <p data-i18n="testimonial1_position">CEO, TechSolutions</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-dots">
+                    <div class="testimonial-dot active"></div>
+                    <div class="testimonial-dot"></div>
+                    <div class="testimonial-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Clients Section -->
+    <section class="clients">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 data-i18n="clients_title">Nossos Clientes</h2>
+                <p data-i18n="clients_subtitle">Empresas que confiam em nosso trabalho</p>
+            </div>
+            
+            <div class="clients-slider fade-in">
+                <div class="clients-track">
+                    <div class="client-logo">
+                        <img src="images/logo-1.png" alt="Cliente 1">
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/logo-2.png" alt="Cliente 2">
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/logo-3.png" alt="Cliente 3">
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/logo-4.png" alt="Cliente 4">
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/logo-1.png" alt="Cliente 1">
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/logo-2.png" alt="Cliente 2">
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/logo-3.png" alt="Cliente 3">
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/logo-4.png" alt="Cliente 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 data-i18n="blog_title">Blog</h2>
+                <p data-i18n="blog_subtitle">Insights, dicas e novidades sobre o mundo digital</p>
+            </div>
+            
+            <div class="blog-grid">
+                <div class="blog-card fade-in">
+                    <div class="blog-image">
+                        <img src="images/blog-1.jpg" alt="Tendências de Design para 2025">
+                        <div class="blog-category">Design</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span data-i18n="blog_date1">15 de Maio, 2025</span>
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="blog-post-1.html" data-i18n="blog_post1_title">Tendências de Design para 2025: O que esperar</a>
+                        </h3>
+                        <p class="blog-excerpt" data-i18n="blog_post1_excerpt">
+                            Descubra as principais tendências de design que dominarão o mercado em 2025 e como aplicá-las em seus projetos.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana Martins">
+                                </div>
+                                <div class="blog-author-name">Ana Martins</div>
+                            </div>
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="far fa-eye"></i> 245
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="far fa-comment"></i> 18
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card fade-in">
+                    <div class="blog-image">
+                        <img src="images/blog-2.jpg" alt="IA no Marketing Digital">
+                        <div class="blog-category">Marketing</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span data-i18n="blog_date2">10 de Maio, 2025</span>
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="blog-post-2.html" data-i18n="blog_post2_title">Como a IA está revolucionando o Marketing Digital</a>
+                        </h3>
+                        <p class="blog-excerpt" data-i18n="blog_post2_excerpt">
+                            Explore como a inteligência artificial está transformando as estratégias de marketing digital e como aproveitar essa tecnologia.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Carlos Mendes">
+                                </div>
+                                <div class="blog-author-name">Carlos Mendes</div>
+                            </div>
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="far fa-eye"></i> 312
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="far fa-comment"></i> 24
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card fade-in">
+                    <div class="blog-image">
+                        <img src="images/blog-3.jpg" alt="Otimização de Performance Web">
+                        <div class="blog-category">Desenvolvimento</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span data-i18n="blog_date3">5 de Maio, 2025</span>
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="blog-post-3.html" data-i18n="blog_post3_title">10 Técnicas para Otimizar a Performance do seu Website</a>
+                        </h3>
+                        <p class="blog-excerpt" data-i18n="blog_post3_excerpt">
+                            Aprenda técnicas práticas para melhorar a velocidade e performance do seu site, proporcionando uma melhor experiência aos usuários.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Rafael Costa">
+                                </div>
+                                <div class="blog-author-name">Rafael Costa</div>
+                            </div>
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="far fa-eye"></i> 189
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="far fa-comment"></i> 15
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-view-all fade-in">
+                <a href="blog.html" class="btn btn-primary" data-i18n="blog_btn">Ver Todos os Posts</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2 data-i18n="cta_title">Pronto para transformar sua presença digital?</h2>
+                <p data-i18n="cta_subtitle">Entre em contato conosco hoje mesmo e descubra como podemos ajudar a impulsionar seu negócio no ambiente digital.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn cta-btn-primary" data-i18n="cta_btn1">Fale Conosco</a>
+                    <a href="#portfolio" class="btn cta-btn-secondary" data-i18n="cta_btn2">Ver Portfólio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 data-i18n="contact_title">Contato</h2>
+                <p data-i18n="contact_subtitle">Entre em contato conosco para discutir seu próximo projeto</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3 data-i18n="contact_heading">Vamos conversar</h3>
+                    <p data-i18n="contact_text">Estamos ansiosos para ouvir sobre seu projeto e como podemos ajudar a transformar suas ideias em realidade.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h4 data-i18n="contact_address_title">Endereço</h4>
+                                <p data-i18n="contact_address">Av. Paulista, 1000, São Paulo - SP</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h4 data-i18n="contact_phone_title">Telefone</h4>
+                                <p><a href="tel:+551199999999">(11) 9999-9999</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h4 data-i18n="contact_email_title">Email</h4>
+                                <p><a href="mailto:contato@agenciadigital.com">contato@agenciadigital.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="#" class="contact-social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="contact-social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="contact-social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="contact-social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label" data-i18n="contact_form_name">Nome</label>
+                            <input type="text" id="name" class="form-control" required data-i18n-placeholder="contact_form_name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label" data-i18n="contact_form_email">Email</label>
+                            <input type="email" id="email" class="form-control" required data-i18n-placeholder="contact_form_email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label" data-i18n="contact_form_subject">Assunto</label>
+                            <input type="text" id="subject" class="form-control" required data-i18n-placeholder="contact_form_subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label" data-i18n="contact_form_message">Mensagem</label>
+                            <textarea id="message" class="form-control" required data-i18n-placeholder="contact_form_message"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit" data-i18n="contact_form_submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-rocket"></i>
+                        <span data-i18n="nav_brand">Agência Digital</span>
+                    </a>
+                    <p data-i18n="footer_about">Somos uma agência digital especializada em design, desenvolvimento web e marketing digital. Criamos soluções inovadoras que impulsionam o crescimento do seu negócio.</p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title" data-i18n="footer_links">Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> <span data-i18n="nav_home">Home</span></a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> <span data-i18n="nav_about">Sobre</span></a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> <span data-i18n="nav_services">Serviços</span></a></li>
+                        <li><a href="#portfolio"><i class="fas fa-chevron-right"></i> <span data-i18n="nav_portfolio">Portfólio</span></a></li>
+                        <li><a href="#blog"><i class="fas fa-chevron-right"></i> <span data-i18n="nav_blog">Blog</span></a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> <span data-i18n="nav_contact">Contato</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title" data-i18n="footer_services">Serviços</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="service1_title">Desenvolvimento Web</span></a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="service2_title">Aplicativos Mobile</span></a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="service3_title">Design UI/UX</span></a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="service4_title">Marketing Digital</span></a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="service5_title">SEO & Content</span></a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> <span data-i18n="service6_title">E-commerce</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3 class="footer-title" data-i18n="footer_newsletter">Newsletter</h3>
+                    <p data-i18n="footer_newsletter_text">Inscreva-se para receber nossas últimas novidades e artigos.</p>
+                    <form class="footer-newsletter-form">
+                        <input type="email" class="footer-newsletter-input" data-i18n-placeholder="footer_newsletter_placeholder" placeholder="Seu email" required>
+                        <button type="submit" class="footer-newsletter-button"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright" data-i18n="footer_copyright">
+                    &copy; 2025 Agência Digital. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

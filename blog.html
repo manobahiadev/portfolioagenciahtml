@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Agência Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>Agência Digital</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">Sobre</a></li>
+                    <li><a href="index.html#services">Serviços</a></li>
+                    <li><a href="index.html#portfolio">Portfólio</a></li>
+                    <li><a href="index.html#blog" class="active">Blog</a></li>
+                    <li><a href="index.html#contact">Contato</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="lang-toggle" id="lang-toggle">
+                        <img src="images/flag-br.svg" alt="Português">
+                    </button>
+                </div>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">Sobre</a></li>
+            <li><a href="index.html#services">Serviços</a></li>
+            <li><a href="index.html#portfolio">Portfólio</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contato</a></li>
+        </ul>
+        
+        <div class="mobile-nav-buttons">
+            <button class="theme-toggle" id="mobile-theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="lang-toggle" id="mobile-lang-toggle">
+                <img src="images/flag-br.svg" alt="Português">
+            </button>
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- Blog Archive -->
+    <section class="blog-archive">
+        <div class="container">
+            <div class="blog-archive-header fade-in">
+                <h2 class="blog-archive-title">Blog</h2>
+                <p class="blog-archive-description">Insights, dicas e novidades sobre o mundo digital. Fique por dentro das últimas tendências em design, desenvolvimento e marketing digital.</p>
+            </div>
+            
+            <div class="blog-archive-filters fade-in">
+                <div class="blog-archive-categories">
+                    <div class="blog-archive-category active" data-category="all">Todos</div>
+                    <div class="blog-archive-category" data-category="design">Design</div>
+                    <div class="blog-archive-category" data-category="desenvolvimento">Desenvolvimento</div>
+                    <div class="blog-archive-category" data-category="marketing">Marketing</div>
+                    <div class="blog-archive-category" data-category="tecnologia">Tecnologia</div>
+                </div>
+                
+                <div class="blog-archive-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar artigos...">
+                </div>
+            </div>
+            
+            <div class="blog-archive-grid">
+                <div class="blog-card fade-in" data-category="design">
+                    <div class="blog-image">
+                        <img src="images/blog-1.jpg" alt="Tendências de Design para 2025">
+                        <div class="blog-category">Design</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <i class="far fa-calendar-alt"></i>
+                            15 de Maio, 2025
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="blog-post-1.html">Tendências de Design para 2025: O que esperar</a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            Descubra as principais tendências de design que dominarão o mercado em 2025 e como aplicá-las em seus projetos.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana Martins">
+                                </div>
+                                <div class="blog-author-name">Ana Martins</div>
+                            </div>
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="far fa-eye"></i> 245
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="far fa-comment"></i> 18
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card fade-in" data-category="marketing">
+                    <div class="blog-image">
+                        <img src="images/blog-2.jpg" alt="IA no Marketing Digital">
+                        <div class="blog-category">Marketing</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <i class="far fa-calendar-alt"></i>
+                            10 de Maio, 2025
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="blog-post-2.html">Como a IA está revolucionando o Marketing Digital</a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            Explore como a inteligência artificial está transformando as estratégias de marketing digital e como aproveitar essa tecnologia.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Carlos Mendes">
+                                </div>
+                                <div class="blog-author-name">Carlos Mendes</div>
+                            </div>
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="far fa-eye"></i> 312
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="far fa-comment"></i> 24
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card fade-in" data-category="desenvolvimento">
+                    <div class="blog-image">
+                        <img src="images/blog-3.jpg" alt="Otimização de Performance Web">
+                        <div class="blog-category">Desenvolvimento</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <i class="far fa-calendar-alt"></i>
+                            5 de Maio, 2025
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="blog-post-3.html">10 Técnicas para Otimizar a Performance do seu Website</a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            Aprenda técnicas práticas para melhorar a velocidade e performance do seu site, proporcionando uma melhor experiência aos usuários.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Rafael Costa">
+                                </div>
+                                <div class="blog-author-name">Rafael Costa</div>
+                            </div>
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="far fa-eye"></i> 189
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="far fa-comment"></i> 15
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card fade-in" data-category="tecnologia">
+                    <div class="blog-image">
+                        <img src="images/blog-1.jpg" alt="Futuro da Realidade Virtual">
+                        <div class="blog-category">Tecnologia</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <i class="far fa-calendar-alt"></i>
+                            1 de Maio, 2025
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="blog-post-1.html">O Futuro da Realidade Virtual nos Negócios</a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            Como a realidade virtual está transformando diferentes setores e criando novas oportunidades para empresas inovadoras.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Mariana Silva">
+                                </div>
+                                <div class="blog-author-name">Mariana Silva</div>
+                            </div>
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="far fa-eye"></i> 178
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="far fa-comment"></i> 12
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card fade-in" data-category="design">
+                    <div class="blog-image">
+                        <img src="images/blog-2.jpg" alt="Design System">
+                        <div class="blog-category">Design</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <i class="far fa-calendar-alt"></i>
+                            25 de Abril, 2025
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="blog-post-2.html">Como criar um Design System eficiente para sua empresa</a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            Guia completo para desenvolver um sistema de design que mantenha consistência visual e agilize o processo de desenvolvimento.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana Martins">
+                                </div>
+                                <div class="blog-author-name">Ana Martins</div>
+                            </div>
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="far fa-eye"></i> 203
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="far fa-comment"></i> 16
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card fade-in" data-category="marketing">
+                    <div class="blog-image">
+                        <img src="images/blog-3.jpg" alt="SEO em 2025">
+                        <div class="blog-category">Marketing</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <i class="far fa-calendar-alt"></i>
+                            20 de Abril, 2025
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="blog-post-3.html">SEO em 2025: Estratégias que realmente funcionam</a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            As melhores práticas de otimização para mecanismos de busca que você precisa implementar para se destacar na era da IA.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Carlos Mendes">
+                                </div>
+                                <div class="blog-author-name">Carlos Mendes</div>
+                            </div>
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="far fa-eye"></i> 267
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="far fa-comment"></i> 21
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-archive-pagination fade-in">
+                <div class="blog-archive-pagination-item active">1</div>
+                <div class="blog-archive-pagination-item">2</div>
+                <div class="blog-archive-pagination-item">3</div>
+                <div class="blog-archive-pagination-item"><i class="fas fa-chevron-right"></i></div>
+            </div>
+        </div>
+    </section>
+    
+   
+</body>
+</html>
